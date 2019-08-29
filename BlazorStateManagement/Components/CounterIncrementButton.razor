@@ -1,0 +1,6 @@
+﻿@using BlazorStateManagement.StateContainers
+
+<button class="btn btn-primary" @onclick="StateManager.IncrementCounter">Click me</button>
+@code {
+    [CascadingParameter] protected CounterState.Manager StateManager { get; set; }
+}

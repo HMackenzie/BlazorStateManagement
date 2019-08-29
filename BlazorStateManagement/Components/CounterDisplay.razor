@@ -1,0 +1,8 @@
+﻿@using BlazorStateManagement.StateContainers
+
+<p>Current count: @CurrentCount</p>
+<CounterIncrementButton />
+<CounterResetButton />
+@code {
+    [Parameter] protected int CurrentCount { get; set; }
+}

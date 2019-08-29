@@ -1,0 +1,23 @@
+﻿@using BlazorStateManagement.StateContainers
+@if (isComplete)
+{
+    <button class="btn btn-warning" @onclick="@(() => stateManager.ToggleComplete(index))">Reactivate</button>
+}
+else
+{
+    <button class="btn btn-primary" @onclick="@(() => stateManager.ToggleComplete(index))">Close</button>
+}
+
+
+@code
+{
+    [CascadingParameter]
+    protected ToDoState.Manager stateManager { get; set; }
+
+    [Parameter]
+    protected int index { get; set; }
+
+    [Parameter]
+    protected bool isComplete { get; set; }
+
+}

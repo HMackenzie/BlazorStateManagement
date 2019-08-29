@@ -1,0 +1,51 @@
+﻿@using BlazorStateManagement.Data
+@using BlazorStateManagement.Components
+@using BlazorStateManagement.StateContainers
+
+@if (ToDoItems != null || !ToDoItems.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Finished?</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var i = 0; i < ToDoItems.Count(); i++)
+            {
+                <tr>
+                    <td>@ToDoItems.ElementAt(i).Text</td>
+                    <td>@ToDoItems.ElementAt(i).IsComplete.ToString()</td>
+                    <td><ToDoCompleteButton index="i" isComplete="ToDoItems.ElementAt(i).IsComplete"></ToDoCompleteButton> </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else { <p><em>Doesn't look like there's any ToDo Items yet. Try adding one!</em></p>}
+
+<input type="text" class="form-control" placeholder="Details" @bind-value="NewItem.Text" />
+<button type="button" class="btn btn-success" @onclick="HandleAddClick">Add</button>
+
+@code {
+    [Parameter]
+    protected List<ToDoItem> ToDoItems { get; set; }
+
+    [CascadingParameter]
+    protected ToDoState.Manager stateManager { get; set; }
+
+    public ToDoItem NewItem { get; set; }
+
+    protected override void OnInit()
+    {
+        this.NewItem = new ToDoItem();
+    }
+
+    public void HandleAddClick()
+    {
+        stateManager.AddItem(NewItem);
+        NewItem = new ToDoItem();
+    }
+}

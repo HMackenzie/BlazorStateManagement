@@ -1,0 +1,22 @@
+﻿@page "/ToDo"
+@using BlazorStateManagement.StateContainers
+@using BlazorStateManagement.Components
+
+<h3>ToDo</h3>
+
+<CascadingValue Value="stateManager">
+    <ToDoDisplay ToDoItems="state.ToDoItems"></ToDoDisplay>
+</CascadingValue>
+
+@code {
+    private ToDoState state;
+    private ToDoState.Manager stateManager;
+
+    protected override void OnInit()
+    {
+        state = new ToDoState();
+        stateManager = new ToDoState.Manager(state);
+        stateManager.OnIsCompleteChanged += StateHasChanged;
+        stateManager.OnToDoItemAdded += StateHasChanged;
+    }
+}

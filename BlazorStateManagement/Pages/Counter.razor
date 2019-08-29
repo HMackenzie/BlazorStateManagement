@@ -1,0 +1,22 @@
+﻿@page "/counter"
+@using BlazorStateManagement.StateContainers
+@using BlazorStateManagement.Components
+<h1>Counter</h1>
+<CascadingValue Value="stateManager">
+    <CounterDisplay CurrentCount="state.CurrentCount"/>
+</CascadingValue>
+@code{
+    private CounterState state;
+    private CounterState.Manager stateManager;
+    protected override void OnInit()
+    {
+        state = new CounterState();
+        stateManager = new CounterState.Manager(state);
+        stateManager.OnCountChanged += StateHasChanged;
+    }
+
+        protected override void OnAfterRender()
+        {
+            base.OnAfterRender();
+        }
+}
