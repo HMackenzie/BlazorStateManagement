@@ -24,7 +24,8 @@
         </tbody>
     </table>
 }
-else { <p><em>Doesn't look like there's any ToDo Items yet. Try adding one!</em></p>}
+else
+{ <p><em>Doesn't look like there's any ToDo Items yet. Try adding one!</em></p>}
 
 <input type="text" class="form-control" placeholder="Details" @bind-value="NewItem.Text" />
 <button type="button" class="btn btn-success" @onclick="HandleAddClick">Add</button>
@@ -38,7 +39,7 @@ else { <p><em>Doesn't look like there's any ToDo Items yet. Try adding one!</em>
 
     public ToDoItem NewItem { get; set; }
 
-    protected override void OnInit()
+    protected override void OnInitialized()
     {
         this.NewItem = new ToDoItem();
     }

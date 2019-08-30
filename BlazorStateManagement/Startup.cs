@@ -10,6 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BlazorStateManagement.Data;
+using BlazorState;
+using System.Reflection;
+using BlazorStateManagement.Features.Counter;
 
 namespace BlazorStateManagement
 {
@@ -29,8 +32,19 @@ namespace BlazorStateManagement
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
-        }
 
+            services.AddBlazorState
+    (
+      (aOptions) => aOptions.Assemblies =
+        new Assembly[]
+        {
+          typeof(Startup).GetTypeInfo().Assembly,
+        }
+    );
+            services.AddScoped<CounterState>();
+
+
+        }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

@@ -12,7 +12,7 @@
     private ToDoState state;
     private ToDoState.Manager stateManager;
 
-    protected override void OnInit()
+    protected override void OnInitialized()
     {
         state = new ToDoState();
         stateManager = new ToDoState.Manager(state);

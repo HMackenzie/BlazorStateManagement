@@ -29,31 +29,26 @@ using Microsoft.AspNetCore.Components.Forms;
 #line default
 #line hidden
 #line 4 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
-using Microsoft.AspNetCore.Components.Layouts;
-
-#line default
-#line hidden
-#line 5 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
-#line 6 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
+#line 5 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
-#line 7 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
+#line 6 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
 using BlazorStateManagement;
 
 #line default
 #line hidden
-#line 8 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
+#line 7 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
 using BlazorStateManagement.Shared;
 
 #line default
 #line hidden
-    [Microsoft.AspNetCore.Components.Layouts.LayoutAttribute(typeof(MainLayout))]
+    [Microsoft.AspNetCore.Components.LayoutAttribute(typeof(MainLayout))]
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public class Index : Microsoft.AspNetCore.Components.ComponentBase
     {

@@ -25,26 +25,21 @@ using Microsoft.AspNetCore.Components.Forms;
 #line default
 #line hidden
 #line 4 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
-using Microsoft.AspNetCore.Components.Layouts;
-
-#line default
-#line hidden
-#line 5 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
-#line 6 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
+#line 5 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
-#line 7 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
+#line 6 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
 using BlazorStateManagement;
 
 #line default
 #line hidden
-#line 8 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
+#line 7 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
 using BlazorStateManagement.Shared;
 
 #line default
@@ -97,7 +92,7 @@ using BlazorStateManagement.Shared;
             builder.OpenComponent<Microsoft.AspNetCore.Components.Routing.NavLink>(20);
             builder.AddAttribute(21, "class", "nav-link");
             builder.AddAttribute(22, "href", "");
-            builder.AddAttribute(23, "Match", Microsoft.AspNetCore.Components.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.Routing.NavLinkMatch>(
+            builder.AddAttribute(23, "Match", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<Microsoft.AspNetCore.Components.Routing.NavLinkMatch>(
 #line 11 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\Shared\NavMenu.razor"
                                                      NavLinkMatch.All
 

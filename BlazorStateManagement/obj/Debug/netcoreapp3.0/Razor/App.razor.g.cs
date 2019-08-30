@@ -25,26 +25,21 @@ using Microsoft.AspNetCore.Components.Forms;
 #line default
 #line hidden
 #line 4 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
-using Microsoft.AspNetCore.Components.Layouts;
-
-#line default
-#line hidden
-#line 5 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
-#line 6 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
+#line 5 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
-#line 7 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
+#line 6 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
 using BlazorStateManagement;
 
 #line default
 #line hidden
-#line 8 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
+#line 7 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\_Imports.razor"
 using BlazorStateManagement.Shared;
 
 #line default
@@ -58,7 +53,7 @@ using BlazorStateManagement.Shared;
             builder.AddAttribute(1, "ChildContent", (Microsoft.AspNetCore.Components.RenderFragment)((builder2) => {
                 builder2.AddMarkupContent(2, "\r\n    ");
                 builder2.OpenComponent<Microsoft.AspNetCore.Components.Routing.Router>(3);
-                builder2.AddAttribute(4, "AppAssembly", Microsoft.AspNetCore.Components.RuntimeHelpers.TypeCheck<System.Reflection.Assembly>(
+                builder2.AddAttribute(4, "AppAssembly", Microsoft.AspNetCore.Components.CompilerServices.RuntimeHelpers.TypeCheck<System.Reflection.Assembly>(
 #line 2 "C:\Users\harry.mackenzie\source\repos\BlazorStateManagement\BlazorStateManagement\App.razor"
                          typeof(Startup).Assembly
 

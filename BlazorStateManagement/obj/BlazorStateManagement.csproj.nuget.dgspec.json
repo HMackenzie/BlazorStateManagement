@@ -14,8 +14,7 @@
         "outputPath": "C:\\Users\\harry.mackenzie\\source\\repos\\BlazorStateManagement\\BlazorStateManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\harry.mackenzie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,7 +26,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.borwell.com/repository/nuget/": {}
         },
         "frameworks": {
           "netcoreapp3.0": {
@@ -42,6 +42,12 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "dependencies": {
+            "Blazor-State": {
+              "target": "Package",
+              "version": "[1.0.0-preview8.19405.7-20190821-112039, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,7 +65,8 @@
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
-          }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.0.100-preview8-013656\\RuntimeIdentifierGraph.json"
         }
       }
     }
