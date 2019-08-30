@@ -13,6 +13,7 @@ using BlazorStateManagement.Data;
 using BlazorState;
 using System.Reflection;
 using BlazorStateManagement.Features.Counter;
+using System.Text.Json;
 
 namespace BlazorStateManagement
 {
@@ -42,6 +43,12 @@ namespace BlazorStateManagement
         }
     );
             services.AddScoped<CounterState>();
+
+            services.AddSingleton(new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            }
+                );
 
 
         }
